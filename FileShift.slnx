@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FileShift.App/FileShift.App.csproj" />
+    <Project Path="src/FileShift.Core/FileShift.Core.csproj" />
+    <Project Path="src/FileShift.Setup/FileShift.Setup.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FileShift.Tests/FileShift.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>FileShiftSetup</AssemblyName><Version>0.1.0</Version>
+    <ApplicationIcon>../../assets/FileShift.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <EnableWindowsFormsAnalyzer>false</EnableWindowsFormsAnalyzer>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../FileShift.Core/FileShift.Core.csproj" /></ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../assets/FileShift.ico" LogicalName="FileShift.Branding.Icon.ico" />
+    <EmbeddedResource Include="../../assets/FileShift.Mark.png" LogicalName="FileShift.Branding.Logo.png" />
+  </ItemGroup>
+  <ItemGroup Condition="Exists('$(MSBuildProjectDirectory)/../../artifacts/payload.zip')">
+    <EmbeddedResource Include="../../artifacts/payload.zip" LogicalName="FileShift.Payload.zip" />
+  </ItemGroup>
+</Project>

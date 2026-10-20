@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>FileShift</AssemblyName>
+    <Version>0.1.0</Version>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>../../assets/FileShift.ico</ApplicationIcon>
+    <NoWarn>$(NoWarn);WFO0003</NoWarn>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../FileShift.Core/FileShift.Core.csproj" /></ItemGroup>
+  <ItemGroup>
+    <Content Include="../../artifacts/native/FileShift.Shell.dll" Link="FileShift.Shell.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" Condition="Exists('../../artifacts/native/FileShift.Shell.dll')" />
+    <Resource Include="../../assets/FileShift.ico" Link="Assets/FileShift.ico" />
+    <Resource Include="../../assets/FileShift.Mark.png" Link="Assets/FileShift.Mark.png" />
+  </ItemGroup>
+</Project>
