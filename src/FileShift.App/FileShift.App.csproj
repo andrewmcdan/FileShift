@@ -12,6 +12,8 @@
   </PropertyGroup>
   <ItemGroup><ProjectReference Include="../FileShift.Core/FileShift.Core.csproj" /></ItemGroup>
   <ItemGroup>
+    <Content Include="../../LICENSE" Link="FileShift.LICENSE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="../../NOTICE" Link="FileShift.NOTICE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <Content Include="../../artifacts/native/FileShift.Shell.dll" Link="FileShift.Shell.dll" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" Condition="Exists('../../artifacts/native/FileShift.Shell.dll')" />
     <Resource Include="../../assets/FileShift.ico" Link="Assets/FileShift.ico" />
     <Resource Include="../../assets/FileShift.Mark.png" Link="Assets/FileShift.Mark.png" />

@@ -80,6 +80,14 @@ Development-machine verification: actual Windows shell menus were checked for im
 
 References: [Microsoft static menu guidance](https://learn.microsoft.com/en-us/windows/win32/shell/creating-static-cascading-menus), [selection model limits](https://learn.microsoft.com/en-us/windows/win32/shell/how-to-employ-the-verb-selection-model), [Windows 11 integration](https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/integrate-packaged-app-with-file-explorer).
 
+## License and attribution
+
+Copyright 2026 Andrew McDaniel. FileShift's original source code, documentation, branding assets, and compiled software are licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE). You may use, modify, and redistribute the source code or executables for permitted purposes, including personal noncommercial use. Keep the license terms or their URL and the `Required Notice:` lines in [NOTICE](NOTICE) with every redistributed copy, including modified versions.
+
+Commercial use requires separate permission unless the license expressly permits it. The license explicitly allows use by charitable organizations, educational institutions, public research organizations, public safety or health organizations, environmental protection organizations, and government institutions regardless of funding. The full license controls; this paragraph is a summary.
+
+These are source-available terms, rather than an OSI open-source license. Third-party components, including the .NET runtime and conversion engines, retain their own licenses. App builds include `FileShift.LICENSE.txt` and `FileShift.NOTICE.txt`; release downloads also provide the terms and notice separately. Contact [Andrew McDaniel](https://github.com/andrewmcdan) for separate commercial permission.
+
 ## Build and verify
 
 The root `logo.png` is the branding source. `scripts/Update-Branding.ps1` creates a centered, tightly framed mark and a Windows icon with 16–256 pixel frames in `assets/`, leaving the source unchanged. The app sidebar, window/taskbar, system tray, installer, Start menu shortcut, and Windows uninstall entry use this branding. The release build regenerates these assets automatically; run the script after changing the logo when building directly with `dotnet`.

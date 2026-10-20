@@ -1,0 +1,19 @@
+FileShift
+
+Required Notice: Copyright 2026 Andrew McDaniel
+Required Notice: FileShift by Andrew McDaniel (https://github.com/andrewmcdan/FileShift)
+
+FileShift's original source code, documentation, branding assets, and compiled
+software are licensed under the PolyForm Noncommercial License 1.0.0. See LICENSE
+in the repository or FileShift.LICENSE.txt in an app distribution.
+
+When distributing FileShift or a modified version, in source or executable form,
+include the license terms or their URL and preserve the Required Notice lines
+above. This notice does not add restrictions to the license.
+
+Third-party components, including the bundled .NET runtime and separately
+installed conversion engines, remain governed by their own licenses. FileShift's
+license does not replace or restrict the rights granted by those licenses.
+
+For uses outside the license's permitted purposes, contact Andrew McDaniel via
+https://github.com/andrewmcdan to request separate permission.
